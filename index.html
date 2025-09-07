@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clock For Kindle</title>
   <style>
-    @font-face {
+    /* @font-face {
       font-family: TIME;
       src: url("time.ttf") format("truetype");
-    }
+    } */
 
     * {
       margin: 0;
@@ -32,22 +32,23 @@
     }
 
     .time {
-      font-family: TIME;
+      /* font-family: TIME; */
+      /* font-family: TIME; */
       margin: 1rem 0;
-      font-family: TIME;
-      font-size: 300px !important;     /* ← 时间字号，改这里，数字越大越大 */
+      font-size: 500px !important;     /* ← 时间字号，改这里，数字越大越大 */
       margin: 1rem 0;
     }
 
     .date {
       white-space: nowrap;
-      font-size: 90px !important;  /* 日期字号 */
+      font-size: 60px !important;  /* 日期字号 */
     }
 
-    .cn-date {
-      font-size: 50px;  /* 农历/节气字号，可按需改 */
+    /* 农历/节气字号，可按需改 */
+    /* .cn-date {
+      font-size: 50px;
       display: none;
-    }
+    } */
     
   </style>
 </head>
@@ -56,11 +57,11 @@
   <div class="app">
     <div class="date"></div>
     <div class="time"></div>
-    <div class="cn-date"></div>
+    <!-- <div class="cn-date"></div> -->
   </div>
 
-  <script src="./calendar.min.js"></script>
-  <script src="./index.min.js"></script>
+  <!-- <script src="./calendar.min.js"></script> -->
+  <script src="./index.js"></script>
 </body>
 
 </html>
